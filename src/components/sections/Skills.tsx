@@ -7,13 +7,13 @@ const skillCategories = [
     skills: [
       'CHO cell culture',
       'RMCE cell line engineering',
-      'Media preparation',
-      'Inoculation',
-      'Filtration',
-      'Protein purification',
-      'Bioreactor operations (NIBRT)',
-      'In-process testing',
-      'Aseptic technique'
+      'media preparation',
+      'inoculation',
+      'filtration',
+      'protein purification',
+      'bioreactor operations (NIBRT)',
+      'in-process testing',
+      'aseptic technique'
     ]
   },
   {
@@ -23,17 +23,17 @@ const skillCategories = [
       'PCR',
       'ELISA',
       'Western blot',
-      'Flow cytometry',
-      'Microbial culturing',
-      'Colony counting',
+      'flow cytometry',
+      'microbial culturing',
+      'colony counting',
       'Gram staining',
-      'Plate reader assays',
+      'plate reader assays',
       'UV-Vis',
       'HPLC (fundamentals)',
       'FTIR',
       'GC-MS',
-      'Autoclave',
-      'pH & sample preparation'
+      'autoclave',
+      'pH and sample preparation'
     ]
   },
   {
@@ -43,10 +43,10 @@ const skillCategories = [
       'cGMP',
       'GLP',
       'ALCOA data integrity',
-      'GMP & batch documentation',
+      'GMP and batch documentation',
       'SOP adherence',
-      'Calibration & equipment records',
-      'Cleaning validation',
+      'calibration and equipment records',
+      'cleaning validation',
       'HACCP',
       'EHS',
       'GCP awareness'
@@ -57,11 +57,11 @@ const skillCategories = [
     color: 'from-violet-500 to-purple-600',
     skills: [
       'Root cause analysis',
-      'Troubleshooting',
-      'Deviation & non-conformance reporting',
-      'Trend review',
+      'troubleshooting',
+      'deviation and non-conformance reporting',
+      'trend review',
       'CAPA awareness',
-      'Waste & re-test reduction'
+      'waste and re-test reduction'
     ]
   },
   {
@@ -70,11 +70,11 @@ const skillCategories = [
     skills: [
       'LIMS',
       'ELN',
-      'Electronic & paperless records',
+      'electronic and paperless records',
       'Microsoft Excel',
       'R programming',
-      'Data entry & analysis',
-      'Inventory & stock systems'
+      'data entry and analysis',
+      'inventory and stock systems'
     ]
   },
   {
@@ -82,10 +82,9 @@ const skillCategories = [
     color: 'from-purple-500 to-fuchsia-600',
     skills: [
       'Shift team working',
-      'Training & onboarding',
-      'Documentation control',
-      'Clear written reporting',
-      'Verbal reporting'
+      'training and onboarding',
+      'documentation control',
+      'clear written and verbal reporting'
     ]
   }
 ];
@@ -95,8 +94,8 @@ const Skills = () => {
     <section id="skills" className="py-24 relative">
       <div className="section-container">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.6 }} className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold mb-4"><span className="text-gradient">Core Skills &amp; Competencies</span></h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto font-body">Bioprocess operations, analytical biochemistry, and rigorous GMP/GLP documentation compliance.</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold mb-4"><span className="text-gradient">Core Skills</span></h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto font-body">Bioprocessing, analytical laboratory techniques, quality compliance, and digital data systems.</p>
         </motion.div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {skillCategories.map((category, index) => (

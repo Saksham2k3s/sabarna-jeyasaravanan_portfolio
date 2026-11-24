@@ -3,42 +3,32 @@ import { FlaskConical, Activity, Microscope } from 'lucide-react';
 
 const projects = [
   {
-    title: 'FTIR & GC-MS Analytical Project',
-    subtitle: 'Spectroscopy & Chemical Characterization',
-    period: 'Academic Research',
-    description: 'Prepared samples, interpreted spectra, and reported findings against method criteria.',
+    title: 'FTIR and GC-MS Analytical Project',
+    period: 'Academic Project',
     highlights: [
-      'Prepared analytical samples according to rigorous testing protocols',
-      'Interpreted complex FTIR and GC-MS spectra against established method criteria',
-      'Documented analytical findings and spectra profiles with full traceability',
+      'Prepared samples, interpreted spectra, and reported findings against method criteria.',
+      'Tools Used: FTIR, GC-MS'
     ],
-    tags: ['FTIR', 'GC-MS', 'Analytical Chemistry', 'Spectroscopy', 'Quality Control'],
+    tags: ['FTIR', 'GC-MS'],
     icon: FlaskConical
   },
   {
     title: 'NIBRT Bioreactor Operations Training',
-    subtitle: 'Upstream Biomanufacturing & Control',
-    period: '2025',
-    description: 'Completed GMP-compliant set-up, monitoring, and documentation of bioreactor runs.',
+    period: 'Training',
     highlights: [
-      'Completed GMP-compliant set-up and calibration for cell culture bioreactors',
-      'Monitored critical bioprocess parameters in real time during bioreactor runs',
-      'Maintained full batch records and audit-ready bioprocess documentation',
+      'Completed GMP-compliant set-up, monitoring, and documentation of bioreactor runs.',
+      'Tools Used: Bioreactor'
     ],
-    tags: ['NIBRT', 'Bioreactor', 'GMP Operations', 'Cell Culture', 'Batch Records'],
+    tags: ['Bioreactor'],
     icon: Activity
   },
   {
-    title: 'LifeArc Chemistry Job Simulation',
-    subtitle: 'Practical Laboratory Problem Solving',
-    period: 'Forage Simulation',
-    description: 'Completed practical analytical and problem-solving tasks.',
+    title: 'LifeArc Chemistry Job Simulation (Forage)',
+    period: 'Job Simulation',
     highlights: [
-      'Executed practical analytical chemistry evaluations and data interpretations',
-      'Applied structured root-cause methodology to laboratory problem-solving tasks',
-      'Demonstrated adherence to standard laboratory quality workflows',
+      'Completed practical analytical and problem-solving tasks.'
     ],
-    tags: ['LifeArc', 'Analytical Chemistry', 'Problem Solving', 'Data Analysis', 'Quality Standards'],
+    tags: ['Forage', 'Simulation'],
     icon: Microscope
   }
 ];
@@ -49,7 +39,7 @@ const Projects = () => {
       <div className="section-container">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.6 }} className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold mb-4"><span className="text-gradient">Academic Research Projects</span></h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto font-body">Hands-on analytical projects, NIBRT biomanufacturing training, and practical laboratory problem solving.</p>
+          <p className="text-muted-foreground max-w-2xl mx-auto font-body">Academic research projects, NIBRT bioreactor operations training, and practical job simulation.</p>
         </motion.div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((project, index) => (
@@ -63,10 +53,8 @@ const Projects = () => {
                     </div>
                     <span className="text-xs text-muted-foreground font-body">{project.period}</span>
                   </div>
-                  <h3 className="text-xl font-display font-semibold text-foreground mb-1">{project.title}</h3>
-                  <p className="text-primary text-sm font-medium mb-3">{project.subtitle}</p>
-                  <p className="text-muted-foreground text-sm mb-4 font-body flex-grow">{project.description}</p>
-                  <ul className="space-y-2 mb-4">
+                  <h3 className="text-xl font-display font-semibold text-foreground mb-4">{project.title}</h3>
+                  <ul className="space-y-3 mb-6 flex-grow">
                     {project.highlights.map((highlight, idx) => (
                       <li key={idx} className="flex gap-2 text-sm text-muted-foreground font-body">
                         <span className="text-primary shrink-0">✦</span>

@@ -57,7 +57,7 @@ const Hero = () => {
                     I create impact{" "}
                   </motion.span>
                   <TextRotate
-                    texts={["in bioprocess.", "through GMP rigor.", "with quality QC.", "in the lab.", "with data integrity.", "every shift."]}
+                    texts={["in QC analysis.", "in bioprocess.", "in cleanroom operations.", "with analytical rigor.", "with GMP compliance."]}
                     mainClassName="text-white px-2 sm:px-3 bg-primary overflow-hidden py-0.5 sm:py-1 justify-center rounded-lg"
                     staggerFrom={"last"}
                     initial={{ y: "100%" }}
@@ -73,7 +73,7 @@ const Hero = () => {
             </motion.div>
 
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.6 }} className="text-muted-foreground text-base sm:text-lg mb-8 max-w-xl font-body leading-relaxed">
-              QC Analyst, Bioprocess Associate, and Associate Scientist candidate with an MEngSc in Biopharmaceutical Engineering (UCD) and hands-on experience in CHO cell line engineering, protein purification, and GMP-regulated manufacturing.
+              QC Analyst, Bioprocess Associate, and Associate Scientist candidate with an MEngSc in Biopharmaceutical Engineering (UCD) and hands-on experience in CHO cell line engineering, protein purification, and GMP-regulated manufacturing. Brings a strong foundation in analytical techniques, batch record review, calibration compliance, and root cause analysis from both academic research and cleanroom production.
             </motion.p>
 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.6 }} className="flex flex-wrap gap-4 mb-8">
@@ -98,7 +98,7 @@ const Hero = () => {
             <ProfileCard
               avatarUrl="/Sabarna-Jeyasaravanan_Profile.jpg"
               name="Sabarna Jeyasaravanan"
-              title="QC Analyst & Bioprocess Associate"
+              title="QC Analyst | Bioprocess Associate"
               handle="sabarnajeyas"
               status="Open to Opportunities"
               contactText="Connect"
