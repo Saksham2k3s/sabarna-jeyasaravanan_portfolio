@@ -7,7 +7,9 @@ const certificates = [
     id: 'cert-1',
     title: 'NIBRT Bioreactor Operations',
     issuer: 'NIBRT',
-    year: '2025'
+    year: '2025',
+    url: 'https://drive.google.com/file/d/1YhcoEw1xHrjpl_GSwSPxp728hHNcboXv/view',
+    buttonLabel: 'View Certificate'
   },
   {
     id: 'cert-2',
