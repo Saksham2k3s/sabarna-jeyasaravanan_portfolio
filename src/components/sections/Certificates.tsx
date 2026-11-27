@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Award } from 'lucide-react';
+import { Award, ExternalLink } from 'lucide-react';
+import { GradientButton } from '@/components/ui/gradient-button';
 
 const certificates = [
   {
@@ -42,7 +43,8 @@ const certificates = [
     id: 'cert-7',
     title: 'Veerichetty, Sivaraman, Jeyasaravanan et al.',
     issuer: 'Indian Journal of Pharmaceutical Education and Research, 58(3), 965-975',
-    year: '2024'
+    year: '2024',
+    url: 'https://www.ijper.org/article/58/3/965.pdf'
   }
 ];
 
@@ -72,6 +74,16 @@ const Certificates = () => {
                     <p className="text-muted-foreground text-sm font-body mt-1">{cert.issuer}</p>
                   </div>
                 </div>
+                {cert.url && (
+                  <div className="mt-auto pt-4">
+                    <GradientButton variant="variant" size="sm" className="w-full" asChild>
+                      <a href={cert.url} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        View Publication
+                      </a>
+                    </GradientButton>
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}
