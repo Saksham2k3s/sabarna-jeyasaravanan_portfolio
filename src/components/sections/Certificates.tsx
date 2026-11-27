@@ -13,7 +13,9 @@ const certificates = [
     id: 'cert-2',
     title: 'GCP',
     issuer: 'PV Drug Safety Academy',
-    year: '2025'
+    year: '2025',
+    url: 'https://drive.google.com/file/d/1OMA2UJgA9fTMCkP__ILdGIVD0iSwe4A8/view',
+    buttonLabel: 'View Certificate'
   },
   {
     id: 'cert-3',
