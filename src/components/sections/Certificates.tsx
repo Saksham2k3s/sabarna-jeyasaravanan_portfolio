@@ -25,7 +25,9 @@ const certificates = [
     id: 'cert-4',
     title: 'R Programming A-Z',
     issuer: 'Udemy',
-    year: '2024'
+    year: '2024',
+    url: 'https://drive.google.com/file/d/1M_3ECGj-DPyYVNSaRpSqWSH4LclHbxAh/view?usp=sharing',
+    buttonLabel: 'View Certificate'
   },
   {
     id: 'cert-5',
@@ -44,7 +46,8 @@ const certificates = [
     title: 'Veerichetty, Sivaraman, Jeyasaravanan et al.',
     issuer: 'Indian Journal of Pharmaceutical Education and Research, 58(3), 965-975',
     year: '2024',
-    url: 'https://www.ijper.org/article/58/3/965.pdf'
+    url: 'https://www.ijper.org/article/58/3/965.pdf',
+    buttonLabel: 'View Publication'
   }
 ];
 
@@ -79,7 +82,7 @@ const Certificates = () => {
                     <GradientButton variant="variant" size="sm" className="w-full" asChild>
                       <a href={cert.url} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
-                        View Publication
+                        {cert.buttonLabel || 'View Certificate'}
                       </a>
                     </GradientButton>
                   </div>
