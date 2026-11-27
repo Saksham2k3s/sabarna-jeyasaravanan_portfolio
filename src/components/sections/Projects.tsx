@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { FlaskConical, Activity, Microscope } from 'lucide-react';
+import { FlaskConical, Activity, Microscope, ExternalLink } from 'lucide-react';
+import { GradientButton } from '@/components/ui/gradient-button';
 
 const projects = [
   {
@@ -29,7 +30,8 @@ const projects = [
       'Completed practical analytical and problem-solving tasks.'
     ],
     tags: ['Forage', 'Simulation'],
-    icon: Microscope
+    icon: Microscope,
+    url: 'https://drive.google.com/file/d/1zJu8-BTzUssfmNNEX-AvXLMTt8twCsGt/view?usp=sharing'
   }
 ];
 
@@ -67,6 +69,16 @@ const Projects = () => {
                       <span key={idx} className="text-xs px-2.5 py-1 rounded-full bg-secondary text-muted-foreground font-body">{tag}</span>
                     ))}
                   </div>
+                  {project.url && (
+                    <div className="pt-4">
+                      <GradientButton variant="variant" size="sm" className="w-full" asChild>
+                        <a href={project.url} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          View Certificate
+                        </a>
+                      </GradientButton>
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
